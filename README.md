@@ -9,7 +9,7 @@ Well here is the extension to your rescue change the color of background in just
 - Click on load unpacked and upload the file.
 
 ## How to use it? 
-_Instructions_ are preety simple:
+_Instructions_ are pretty simple:
 - On top right corner you can see the extension.
 - Click on it.
 - Choose the suitable color from the colors available.
