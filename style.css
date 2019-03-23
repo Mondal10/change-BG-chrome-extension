@@ -2,4 +2,20 @@ button {
   height: 30px;
   width: 30px;
   outline: none;
+  border:none;
+  /* padding: 5px; */
+  display:inline-block;
+}
+
+.changeBackground{
+  /* width: 100%; */
+}
+
+.changeText{
+  /* width: 100%; */
+}
+
+.mainContainer{
+  width: 200px;
+  /* height: 100px; */
 }

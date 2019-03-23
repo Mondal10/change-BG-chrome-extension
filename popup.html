@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,18 +7,28 @@
     <title>Chrome extension</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="changeBackground">
-        <button id="salmon" style="background-color: salmon;"></button>
-        <button id="antiquewhite" style="background-color: antiquewhite;"></button>
-        <button id="lightslategray" style="background-color: lightslategray;"></button>
-        <button id="black" style="background-color: black;"></button>
-        <button id="cornflowerblue" style="background-color: cornflowerblue;"></button>
-        <button id="darkolivegreen" style="background-color: darkolivegreen;"></button>
-        <button id="darkviolet" style="background-color: #222830;"></button>
-        <button id="solarizeddark" style="background-color: #002b36;"></button>
+    <div class="mainContainer">
+        <div class="changeBackground">
+            <h3>Change Background Color:</h3>
+            <button class="backgroundButton" id="salmon" style="background-color: salmon;"></button>
+            <button class="backgroundButton" id="antiquewhite" style="background-color: antiquewhite;"></button>
+            <button class="backgroundButton" id="lightslategray" style="background-color: lightslategray;"></button>
+            <button class="backgroundButton" id="black" style="background-color: black;"></button>
+            <button class="backgroundButton" id="cornflowerblue" style="background-color: cornflowerblue;"></button>
+            <button class="backgroundButton" id="darkolivegreen" style="background-color: darkolivegreen;"></button>
+            <button class="backgroundButton" id="darkviolet" style="background-color: #222830;"></button>
+            <button class="backgroundButton" id="solarizeddark" style="background-color: #002b36;"></button>
+        </div>
+        <div class="changeText">
+            <h3>Change Text Color:</h3>
+            <button class="textButton" id="antiquewhite" style="background-color: antiquewhite;"></button>
+            <button class="textButton" id="lightslategray" style="background-color: lightslategray;"></button>
+        </div>
     </div>
-    
+
     <script type="module" src="popup.js"></script>
 </body>
+
 </html>

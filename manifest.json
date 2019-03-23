@@ -2,7 +2,11 @@
     "name": "Dummy Chrome Extension",
     "version": "1.0",
     "description": "Trying to build an extension",
-    "permissions": [ "declarativeContent", "storage", "activeTab" ],
+    "permissions": [
+        "declarativeContent",
+        "storage",
+        "activeTab"
+    ],
     "page_action": {
         "default_popup": "popup.html",
         "default_icon": {
@@ -18,9 +22,11 @@
         "32": "images/get_started32.png",
         "48": "images/get_started48.png",
         "128": "images/get_started128.png"
-      },
+    },
     "background": {
-        "scripts": [ "background.js" ],
+        "scripts": [
+            "background.js"
+        ],
         "persistent": false
     },
     "manifest_version": 2

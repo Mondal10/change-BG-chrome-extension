@@ -1,9 +1,9 @@
-chrome.runtime.onInstalled.addListener(function() {
+chrome.runtime.onInstalled.addListener(function () {
   // chrome.storage.sync.set({ color: "salmon" }, function() {
   //   console.log("The color is SALMON");
   // });
 
-  chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
+  chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
     chrome.declarativeContent.onPageChanged.addRules([
       {
         conditions: [
