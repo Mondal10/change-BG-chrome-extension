@@ -3,6 +3,7 @@ button {
   width: 30px;
   outline: none;
   border:none;
+  margin:1px;
   display:inline-block;
 }
 
