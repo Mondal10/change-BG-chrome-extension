@@ -35,9 +35,21 @@ for (let backgroundButton of backgroundButtons) {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       chrome.tabs.executeScript(tabs[0].id, {
         code: `document.body.style.backgroundColor = '${bgColor}';
-                var divs = document.getElementsByTagName('div'); 
+                var divs = document.getElementsByTagName('div');
+                var canvases = document.getElementsByTagName('canvas');
+                var tables = document.getElementsByTagName('table');
                 for (let div of divs) {
                   div.style.backgroundColor = 'transparent';
+                }
+                if(canvases){
+                  for (let canvas of canvases) {
+                    canvas.style.backgroundColor = 'transparent';
+                  }
+                }
+                if(tables){
+                  for (let table of tables) {
+                    table.style.backgroundColor = 'transparent';
+                  }
                 }`
       });
     });

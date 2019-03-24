@@ -1,7 +1,7 @@
 {
-    "name": "Dummy Chrome Extension",
+    "name": "Make It Dark",
     "version": "1.0",
-    "description": "Trying to build an extension",
+    "description": "Make light themed webpage a dark themed dark page",
     "permissions": [
         "declarativeContent",
         "storage",
