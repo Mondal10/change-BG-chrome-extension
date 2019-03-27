@@ -2,8 +2,8 @@ const backgroundButtons = document.getElementsByClassName("backgroundButton");
 const textButtons = document.getElementsByClassName("textButton");
 
 // Add more color option if required
-const bgbuttonArr = ['salmon', 'antiquewhite', 'lightslategray', 'black', 'cornflowerblue', 'darkolivegreen', '#222830', '#002b36'];
-const textbuttonArr = ['white', 'antiquewhite', 'lightslategray', '#1a1d24'];
+const bgbuttonArr = ['#51201a', 'salmon', 'antiquewhite', '#203308', '#222830', '#002b36', '#301433', '#4e4c5d', '#3C4556'];
+const textbuttonArr = ['#b9a655', 'antiquewhite', 'lightslategray', '#1a1d24', '#b4d3c1', '#bdc2ce'];
 
 // Create Background color change button
 bgbuttonArr.forEach((color, i) => {
@@ -34,21 +34,21 @@ for (let backgroundButton of backgroundButtons) {
     /***Used to run a one line query on webpage***/
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       chrome.tabs.executeScript(tabs[0].id, {
-        code: `document.body.style.backgroundColor = '${bgColor}';
+        code: `document.body.style.setProperty('background-color','${bgColor}','important');
                 var divs = document.getElementsByTagName('div');
                 var canvases = document.getElementsByTagName('canvas');
                 var tables = document.getElementsByTagName('table');
                 for (let div of divs) {
-                  div.style.backgroundColor = 'transparent';
+                  div.style.setProperty('background-color','transparent','important');
                 }
                 if(canvases){
                   for (let canvas of canvases) {
-                    canvas.style.backgroundColor = 'transparent';
+                    canvas.style.setProperty('background-color','transparent','important');
                   }
                 }
                 if(tables){
                   for (let table of tables) {
-                    table.style.backgroundColor = 'transparent';
+                    table.style.setProperty('background-color','transparent','important');
                   }
                 }`
       });
@@ -63,7 +63,7 @@ for (let textButton of textButtons) {
     /***Used to run a one line query on webpage***/
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       chrome.tabs.executeScript(tabs[0].id, {
-        code: `document.body.style.color = '${textColor}'`
+        code: `document.body.style.setProperty('color','${textColor}','important')`
       });
     });
     /***Used to run a one line query on webpage***/
