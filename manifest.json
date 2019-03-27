@@ -1,7 +1,7 @@
 {
     "name": "Make It Dark",
     "version": "1.0",
-    "description": "Make light themed webpage a dark themed dark page",
+    "description": "Make light themed webpage a dark themed web page",
     "permissions": [
         "declarativeContent",
         "storage",
