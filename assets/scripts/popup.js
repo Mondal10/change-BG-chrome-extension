@@ -63,7 +63,10 @@ for (let textButton of textButtons) {
     /***Used to run a one line query on webpage***/
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       chrome.tabs.executeScript(tabs[0].id, {
-        code: `document.body.style.setProperty('color','${textColor}','important')`
+        code: `document.body.style.setProperty('color','${textColor}','important');
+                [...document.querySelectorAll('p')].forEach(el => el.style.setProperty('color','${textColor}','important'));
+                [...document.querySelectorAll('li')].forEach(el => el.style.setProperty('color','${textColor}','important'));
+                [...document.querySelectorAll('h1')].forEach(el => el.style.setProperty('color','${textColor}','important'));`
       });
     });
     /***Used to run a one line query on webpage***/
