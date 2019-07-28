@@ -1,6 +1,6 @@
 {
     "name": "Make It Dark",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "short_name": "MID",
     "description": "Make light themed webpage a dark themed web page",
     "permissions": [
